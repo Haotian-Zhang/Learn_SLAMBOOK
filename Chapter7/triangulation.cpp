@@ -60,7 +60,7 @@ int main(int argc, char** argv){
                 points[i].x/points[i].z,
                 points[i].y/points[i].z);
         cout << "point in the first camera frame: " << pt1_cam << endl;
-        cout << "point projected from 3d " << pt1_cam_3d << endl;
+        cout << "point projected from 3d " << pt1_cam_3d << ",d=" <<points[i].z << endl;
 
         //Second frame
         Point2d pt2_cam = pixel2cam( keypoints_2[matches[i].trainIdx].pt, K);
