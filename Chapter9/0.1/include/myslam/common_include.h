@@ -18,7 +18,7 @@ using Sophus::SE3;
 
 // for cv
 #include <opencv2/core/core.hpp>
-using cv::Mat
+using cv::Mat;
 
 // std
 #include <vector>
