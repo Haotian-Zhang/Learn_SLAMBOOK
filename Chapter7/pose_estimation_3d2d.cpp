@@ -65,8 +65,8 @@ int main(int argc, char** argv){
     cout << "3d-2d pairs: " << pts_3d.size() << endl;
 
     Mat r, t;
-    solvePnP( pts_3d, pts_2d, K, Mat(), r, t, false ); // OpenCV PnP Solver
-//    solvePnPRansac( pts_3d, pts_2d, K, Mat(), r, t, false );
+//    solvePnP( pts_3d, pts_2d, K, Mat(), r, t, false ); // OpenCV PnP Solver
+    solvePnPRansac( pts_3d, pts_2d, K, Mat(), r, t, false );
     Mat R;
     Rodrigues( r, R ); // r: rotation vector, use Rodrigues to turn into matrix
 
