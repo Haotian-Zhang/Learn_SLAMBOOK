@@ -1,0 +1,4 @@
+/home/haotian/clion-2018.1.5/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/haotian/CLionProjects/Learn_SLAM/Chapter9/0.1/src
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/haotian/CLionProjects/Learn_SLAM/Chapter9/0.1/src/cmake-build-debug
