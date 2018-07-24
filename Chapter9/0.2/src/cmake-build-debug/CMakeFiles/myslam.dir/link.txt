@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libmyslam.so -o libmyslam.so CMakeFiles/myslam.dir/frame.cpp.o CMakeFiles/myslam.dir/mappoint.cpp.o CMakeFiles/myslam.dir/map.cpp.o CMakeFiles/myslam.dir/camera.cpp.o CMakeFiles/myslam.dir/config.cpp.o 
