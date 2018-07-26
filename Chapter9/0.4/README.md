@@ -1,9 +1,9 @@
 # Project 0.4
 VO Project, Version 0.4
 ## Description
-在本项目中，我们将 VO 匹配到的特征点放到地图中,并将当前帧与地图点进行匹配,计算位姿。这种做法与之前的差异可见图[1].
+在本项目中，我们将 VO 匹配到的特征点放到地图中,并将当前帧与地图点进行匹配,计算位姿。这种做法与之前的差异可见Fig[1].
 
-![Fig1- Difference between frame to frame & local map][https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter9/0.4/mappoints.png]
+![Fig1- Difference between frame to frame & local map]（https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter9/0.4/mappoints.png）
 
 在两两帧间比较时,我们只计算参考帧与当前帧之间的特征匹配和运动关系,在计算之后把当前帧设为新的参考帧。而在使用地图的 VO 中,每个帧为地图贡献一些信息,比方说添加新的特征点或更新旧特征点的位置估计。地图中的特征点位置往往是使用世界坐标的。因此,当前帧到来时,我们求它和地图之间的特征匹配与运动关系,即直接计算了$T_{cw}$.
 
