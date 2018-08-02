@@ -24,7 +24,7 @@ cd ./build
 
 ## Results
 
-You will see the map get dense and dense when the loop number increases. For simplicty, the datasets only contain 10 images and a .txt file contains poses correspongding to specific images. The following figure shows the images at loop 4 and loop 9.
+You will see the map get denser and denser when the loop number increases. For simplicty, the datasets only contain 10 images and a .txt file contains poses correspongding to specific images. The following figure shows the images at loop 4 and loop 9.
 <div align="center">
 <img src="https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter13/dense_monocular/4.png" height="300px" alt="depth" > 
 <img src="https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter13/dense_monocular/10.png" height="300px" alt="depth" > 
