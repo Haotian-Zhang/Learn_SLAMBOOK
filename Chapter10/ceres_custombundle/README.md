@@ -7,7 +7,9 @@ This prorject is to use Ceres to do the Bundle Adjustment. The results are shown
 <img src="https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter10/g2o_custombundle/initial.png" height="300px" alt="Before BA" > 
 <img src="https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter10/g2o_custombundle/final.png" height="300px" alt="After BA" >
 </div>
+
 ## How to run the codes
+
 ### Building
 ```
 mkdir build
@@ -15,17 +17,21 @@ cd ./build
 cmake ..
 make
 ```
+
 ### Usage
 ```
 cd ./build
 ./ceres_customBundle -input ../data/problem-.....txt
 ```
+
 ##### See more detail settings by
 ```
 ./ceres_customBundle -help
 ```
+
 ## Caution
 Ceres 库公开的 API 说明详细，同时源代码可读性也高，推荐多多阅读 Ceres 源代码，并且自己尝试在 Schur 消元操作中只消去部分点云变量，或者夹杂着消去一些相机变量。这只需要操作 ceres::ParameterBlockOrdering::AddElementToGroup 函数,在对应变量地址上,用序号指定顺序即可。
+
 ### Related Materials - Ceres
 1）[Ceres Solver](http://www.ceres-solver.org/index.html)
 
