@@ -36,7 +36,7 @@ You will see the map get dense and dense when the loop number increases. For sim
 
 　　对于一个目的像素，设置坐标通过反向变换得到的浮点坐为 $$(i+u,j+v)$$ (其中 $i$ 、$j$ 均为浮点坐标的整数部分，$$u$$ 、$$v$$ 为浮点坐标的小数部分，是取值 [0,1) 区间的浮点数)，则这个像素得值 $f(i+u,j+v)$ 可由原图像中坐标为 $(i,j)$ 、$(i+1,j)$ 、$(i,j+1)$ 、$(i+1,j+1)$ 所对应的周围四个像素的值决定，即：
   
-$f(i+u,j+v) = (1-u)(1-v)f(i,j) + (1-u)vf(i,j+1) + u(1-v)f(i+1,j) + uvf(i+1,j+1)$
+<a href="https://www.codecogs.com/eqnedit.php?latex=f(i&plus;u,j&plus;v)&space;=&space;(1-u)(1-v)f(i,j)&space;&plus;&space;(1-u)vf(i,j&plus;1)&space;&plus;&space;u(1-v)f(i&plus;1,j)&space;&plus;&space;uvf(i&plus;1,j&plus;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(i&plus;u,j&plus;v)&space;=&space;(1-u)(1-v)f(i,j)&space;&plus;&space;(1-u)vf(i,j&plus;1)&space;&plus;&space;u(1-v)f(i&plus;1,j)&space;&plus;&space;uvf(i&plus;1,j&plus;1)" title="f(i+u,j+v) = (1-u)(1-v)f(i,j) + (1-u)vf(i,j+1) + u(1-v)f(i+1,j) + uvf(i+1,j+1)" /></a>
 
 其中f(i,j)表示源图像 $(i,j)$ 处的的像素值，以此类推，详情可见下图:
 
