@@ -1,4 +1,4 @@
-# pointCloud Mapping
+# RGBD Mapping
 ## Description
 ### PointCloud (PCL)
 
@@ -40,6 +40,7 @@ The following figure are the point cloud map after filtering:
 <div align="center">
 <img src="https://github.com/Haotian-Zhang/Learn_SLAMBOOK/raw/master/Chapter13/dense_RGBD/map.png" height="300px" alt="depth" > 
 </div>
+
 
 The following figure are the octomap when voxel volume= 16:
 
